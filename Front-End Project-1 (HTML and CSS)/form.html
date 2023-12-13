@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="lab-test">
+      <section class="form-container">
+
+          <div class="left-half">
+            <article class="form-data">
+              <form id="lab-test-form" action="" method="post">
+
+                <h2>1. Your Contact Details</h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><input type="text" name="Patient_Name" placeholder="Full Name" required></td>
+                      <td><input type="text" name="Patient_Id" placeholder="Patient Id if exists" required></td>
+                    </tr>
+                    <tr>
+                      <td><input type="number" name="Phone_No." min="6000000000" max="9999999999" value="" placeholder="Contact Number" required></td>
+                      <td><input type="email" name="email" placeholder="Email id" required></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h2>2. Address</h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><input type="number" name="House_No." placeholder="H-No" required></td>
+                      <td><input type="text" name="Street" placeholder="Street" required></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" name="Area" placeholder="Area" required></td>
+                    </tr>
+                  </tbody>
+                <table>
+                <h3>District</h3>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <select class="dropbox" name="District" required>
+                          <option value="0">Choose</option>
+                          <option value="Cooch Behar">Cooch Behar</option>
+                          <option value="Jalpaiguri">Jalpaiguri</option>
+                          <option value="Darjeeling">Darjeeling</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h2 id="test-type">3. Test Type <span id="test-span">(Check at least one box without fail)</span></h2>
+                <article class="checkbox-article" required>
+                  <input type="checkbox" name="test1" value="CBC">CBC
+                  <br>
+                  <input type="checkbox" name="test2" value="Complete Urine">Complete Urine
+                  <br>
+                  <input type="checkbox" name="test3" value="Lipid Profile">Lipid Profile
+                  <br>
+                  <input type="checkbox" name="test4" value="Thyroid Stimulating Hormone(TSH)">Thyroid Stimulating Hormone (TSH)
+                  <br>
+                  <input type="checkbox" name="test5" value="Glucose Test">Glucose Test
+                </article>
+
+                <article class="radio-article">
+                <h2 id="hardcopy">4. Do you want a hard copy of the report also?</h2>
+                  <input type="radio" name="option" value="True" required>yes
+                  <br>
+                  <input type="radio" name="option" value="False">No
+                </article>
+
+                <h2>5. Select your comfortable date and time</h2>
+                <input id="datetime" type="datetime-local" name="datetime">
+
+              </form>
+            </article>
+          </div>
+
+          <div class="right-half">
+            <div class="right-inner">
+              <article class="form-image">
+                <img src="Images/Lab-Test/lab-test.jpg" alt="">
+              </article>
+            </div>
+          </div>
+
+      </section>
+
+        <div class="button-section">
+          <button form="lab-test-form" class="btn" type="button" name="button">Reset</button>
+          <button form="lab-test-form" class="btn" type="button" name="button">Submit</button>
+        </div>
+
+    </div>
+    
+  </body>
+</html>
